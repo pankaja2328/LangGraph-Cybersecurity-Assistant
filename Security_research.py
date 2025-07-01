@@ -48,7 +48,7 @@ def search_nvd_cves(service: str, version: str, limit: int = 10) -> list:
     Search for CVEs using the official NVD API based on service name and version.
     Returns a list of CVEs with description, score, date, and link.
     """
-    api_key = "8cc770c5-150a-42f0-b398-e620022736a2"  # Use your key here
+    api_key = none  # Use your key here
     query = f"{service} {version}"
     base_url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
     headers = {"apiKey": api_key} if api_key else {}
